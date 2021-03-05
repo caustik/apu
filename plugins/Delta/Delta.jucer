@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="S1Uiqb" name="Delta" projectType="audioplug" companyName="caustik"
+              companyWebsite="http://www.caustik.com/" companyEmail="caustik@gmail.com"
+              pluginFormats="buildStandalone,buildVST" pluginChannelConfigs="{2,2}"
+              pluginManufacturerCode="APUX" cppLanguageStandard="17" version="0.0.1"
+              displaySplashScreen="1" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn"
+              pluginCode="S1uj">
+  <MAINGROUP id="aIWgnn" name="Delta">
+    <GROUP id="{8EB39DF4-6C39-3B70-F8E3-9A3BE0C4A560}" name="Source">
+      <FILE id="nI5yl8" name="DeltaAudioProcessor.cpp" compile="1" resource="0"
+            file="Source/DeltaAudioProcessor.cpp"/>
+      <FILE id="FQN7A4" name="DeltaAudioProcessor.h" compile="0" resource="0"
+            file="Source/DeltaAudioProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../3rd-party/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../3rd-party/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
