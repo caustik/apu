@@ -1,0 +1,74 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build (debug)",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                "/property:GenerateFullPaths=true",
+                "/t:build",
+                "/consoleloggerparameters:NoSummary",
+                "${workspaceFolder}/Builds/VisualStudio2019/apu.sln"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "install (debug)",
+            "type": "shell",
+            "command": "copy",
+            "args": [
+                "${workspaceFolder}\\Builds\\VisualStudio2019\\x64\\Debug\\VST\\*.dll",
+                "C:\\Program Files\\Steinberg\\VSTPlugins\\"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "dependsOn": [
+                "build (debug)"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "build (release)",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                "/property:GenerateFullPaths=true",
+                "/t:build",
+                "/p:Configuration=Release",
+                "/consoleloggerparameters:NoSummary",
+                "${workspaceFolder}/Builds/VisualStudio2019/apu.sln"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "install (release)",
+            "type": "shell",
+            "command": "copy",
+            "args": [
+                "${workspaceFolder}\\Builds\\VisualStudio2019\\x64\\Release\\VST\\*.dll",
+                "C:\\Program Files\\Steinberg\\VSTPlugins\\"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "dependsOn": [
+                "build (release)"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

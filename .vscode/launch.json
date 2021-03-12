@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (Ableton)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "C:\\ProgramData\\Ableton\\Live 10 Suite-10.1.15\\Program\\Ableton Live 10 Suite.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "install (debug)"
+        },
+        {
+            "name": "Debug Delta (Standalone)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "Builds/VisualStudio2019/x64/Debug/Standalone Plugin/Delta.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "build (debug)"
+        },
+        {
+            "name": "Debug Python (Standalone)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "Builds/VisualStudio2019/x64/Debug/Standalone Plugin/Python.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "build (debug)"
+        }
+    ]
+}
